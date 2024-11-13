@@ -1,48 +1,82 @@
+/* Basic reset for body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Full-page layout with background images */
+.page {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.container {
     text-align: center;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease;
 }
 
-h1 {
-    font-size: 2rem;
+/* Background for Question Pages */
+#question1 {
+    background-image: url('1b.jpg');
 }
 
-.question {
+#question2 {
+    background-image: url('1b.jpg');
+}
+
+#question3 {
+    background-image: url('1b.jpg');
+}
+
+#question4 {
+    background-image: url('1b.jpg');
+}
+
+#question5 {
+    background-image: url('1b.jpg');
+}
+
+#question6 {
+    background-image: url('1b.jpg');
+}
+
+/* Content Box Styling */
+.content {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the images inside questions */
+.question-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
     margin-top: 20px;
 }
 
-input {
-    padding: 10px;
-    font-size: 1rem;
-    margin: 10px;
-    width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 18px;
 }
 
+/* Button styling */
 button {
     padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #4CAF50;
+    background-color: #FF6347;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
+/* Button hover effect */
 button:hover {
-    background-color: #45a049;
+    background-color: #FF4500;
 }
