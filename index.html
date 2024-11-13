@@ -3,18 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Date Scheduler</title>
+    <title>Plan Our Date</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Are you my girlfriend?</h1>
-        <div class="question">
-            <label for="answer">What's your name?</label>
-            <input type="text" id="answer" placeholder="Enter your name">
-            <button onclick="nextQuestion()">Next</button>
+        <!-- Question 1: Name Validation -->
+        <div id="question1" class="question-page">
+            <div class="question-container">
+                <img src="img/first-question-image.jpg" alt="Question 1 Image" class="question-image">
+                <h1>What's your name?</h1>
+                <input type="text" id="nameInput" class="input-field" placeholder="Enter your name" />
+                <button class="submit-btn" onclick="validateName()">Submit</button>
+                <p id="message" class="error-message"></p>
+            </div>
+        </div>
+
+        <!-- Question 2: Fun Greeting -->
+        <div id="question2" class="question-page">
+            <div class="question-container">
+                <img src="img/fun-greeting-image.jpg" alt="Question 2 Image" class="question-image">
+                <h1>Alo babeessshhh</h1>
+                <button class="submit-btn" onclick="showQuestion3()">Next</button>
+            </div>
+        </div>
+
+        <!-- Question 3: Date Selection -->
+        <div id="question3" class="question-page">
+            <div class="question-container">
+                <img src="img/date-selection-image.jpg" alt="Question 3 Image" class="question-image">
+                <h1>Which date do you have in mind for our বেড়ু?</h1>
+                <input type="date" id="dateInput" class="input-field" />
+                <button class="submit-btn" onclick="showQuestion4()">Next</button>
+            </div>
+        </div>
+
+        <!-- Question 4: Time Input -->
+        <div id="question4" class="question-page">
+            <div class="question-container">
+                <img src="img/time-input-image.jpg" alt="Question 4 Image" class="question-image">
+                <h1>What time should our বেড়ু begin?</h1>
+                <input type="text" id="timeInput" class="input-field" placeholder="Enter your preferred time" />
+                <button class="submit-btn" onclick="showQuestion5()">Next</button>
+            </div>
+        </div>
+
+        <!-- Question 5: Meeting Place -->
+        <div id="question5" class="question-page">
+            <div class="question-container">
+                <img src="img/place-input-image.jpg" alt="Question 5 Image" class="question-image">
+                <h1>Where do you wanna meet?</h1>
+                <input type="text" id="placeInput" class="input-field" placeholder="Enter a location" />
+                <button class="submit-btn" onclick="showQuestion6()">Next</button>
+            </div>
+        </div>
+
+        <!-- Question 6: Food Preference -->
+        <div id="question6" class="question-page">
+            <div class="question-container">
+                <img src="img/food-input-image.jpg" alt="Question 6 Image" class="question-image">
+                <h1>What would you like to eat?</h1>
+                <input type="text" id="foodInput" class="input-field" placeholder="Enter your favorite food" />
+                <button class="submit-btn" onclick="finish()">Finish</button>
+            </div>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
