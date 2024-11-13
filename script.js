@@ -1,16 +1,19 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const inputField = document.getElementById('answer');
-    const submitButton = document.getElementById('submitButton');
+function checkName() {
+    // Get the input value
+    var name = document.getElementById("name").value.trim().toLowerCase();
 
-    const correctAnswer = "yes"; // The answer that redirects
+    // List of acceptable names (case insensitive)
+    var validNames = [
+        "Mrittika", "mrittika", "tanbin rubayra mrittika", 
+        "Tanbin Rubayra Mrittika", "Babesh"
+    ];
 
-    submitButton.addEventListener('click', function(event) {
-        event.preventDefault();
-
-        if (inputField.value.trim().toLowerCase() === correctAnswer) {
-            window.location.href = 'notGirlfriend.html'; // Redirects to this file
-        } else {
-            alert('Sorry, that’s not the correct answer. Please try again!');
-        }
-    });
-});
+    // Check if the name matches one of the valid names
+    if (validNames.includes(name)) {
+        // If valid, move to the next question page
+        window.location.href = "nextQuestionPage.html";  // Change to your next question page
+    } else {
+        // If name doesn't match, redirect to the "Not My Girlfriend" page
+        window.location.href = "notGirlfriend.html";
+    }
+}
