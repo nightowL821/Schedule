@@ -4,8 +4,8 @@ function checkName() {
 
     // List of acceptable names (case insensitive)
     var validNames = [
-        "Mrittika", "mrittika", "tanbin rubayra mrittika", 
-        "Tanbin Rubayra Mrittika", "Babesh"
+        "mrittika", "mrittike", "tanbin rubayra mrittika", 
+        "tanbin rubayra mrittika", "babesh"
     ];
 
     // Check if the name matches one of the valid names
