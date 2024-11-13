@@ -1,20 +1,20 @@
-// Function to check if the entered name is valid
+// Function to check the name and redirect
 function checkName() {
-    // Get the value of the input field, trimming excess spaces and converting to lowercase
+    // Get the value of the name input field
     var name = document.getElementById("name").value.trim().toLowerCase();
 
-    // List of valid names (case insensitive)
+    // List of valid names
     var validNames = [
         "mrittika", "mrittike", "tanbin rubayra mrittika", 
-        "tanbin rubayra mrittika", "babesh"
+        "babesh"
     ];
 
-    // Check if the entered name matches any of the valid names
+    // Check if the name is in the valid names list
     if (validNames.includes(name)) {
-        // If the name is valid, redirect to the next question page (you can change this URL to your next page)
-        window.location.href = "nextQuestionPage.html";  // Change this to your next question page URL
+        // If valid, redirect to the next question page (replace with actual page URL)
+        window.location.href = "nextQuestionPage.html";  // Change URL here
     } else {
-        // If the name is not valid, redirect to the "Not My Girlfriend" page
+        // If invalid, redirect to the "Not My Girlfriend" page
         window.location.href = "notGirlfriend.html";
     }
 }
