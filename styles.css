@@ -1,55 +1,46 @@
 body {
-    background-image: url('images/1b.jpg');
-    background-size: cover;
-    background-position: center;
     font-family: 'Arial', sans-serif;
-    color: white;
-    text-align: center;
     margin: 0;
     padding: 0;
 }
 
-.container {
+.question-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url('images/1b.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
 }
 
 .question {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 30px;
     border-radius: 10px;
-    width: 50%;
-}
-
-.question img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 1.8em;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
 }
 
 input {
-    width: 70%;
     padding: 10px;
+    width: 80%;
     margin: 10px 0;
-    border: none;
     border-radius: 5px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.7);
 }
 
 button {
     padding: 10px 20px;
-    background-color: #f1c40f;
-    color: black;
     border: none;
     border-radius: 5px;
+    background-color: #ff4d4d;
+    color: white;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #e67e22;
+    background-color: #e60000;
 }
